@@ -4,14 +4,10 @@
 
 (def db-store "site.db")
 
-(def db-spec {:classname "org.h2.Driver"
-              :subprotocol "h2"
-              :subname (str (io/resource-path) db-store)
-              :user "sa"
-              :password ""
-              :make-pool? true
-              :naming {:keys clojure.string/lower-case
-                       :fields clojure.string/upper-case}})
+(defdb db-spec (postgres {:db "precure_dcd"
+                          :user "precure_dcd"
+                          :password "precure_dcd"
+                          :port 5432}))
 (defn initialized?
   "checks to see if the database schema is present"
   []
