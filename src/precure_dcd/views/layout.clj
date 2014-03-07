@@ -11,7 +11,7 @@
   [template params]
   Renderable
   (render
-    [this request]
+    [_ request]
     {:status 200
      :headers {"Content-Type" "text/html; charset=utf-8"}
      :body (parser/render-file
