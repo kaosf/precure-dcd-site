@@ -21,7 +21,8 @@
      com.sun.jdmk/jmxtools
      com.sun.jmx/jmxri]]
    [lib-noir "0.8.1"]
-   [compojure "1.1.6"]]
+   [compojure "1.1.6"]
+   [hiccup "1.0.5"]]
   :ring
   {:handler precure-dcd.handler/app,
    :init precure-dcd.handler/init,
