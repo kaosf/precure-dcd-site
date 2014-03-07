@@ -1,6 +1,7 @@
 (ns precure-dcd.models.schema
   (:require [clojure.java.jdbc :as sql]
-            [noir.io :as io]))
+            [noir.io :as io]
+            [korma.db :refer [defdb]]))
 
 (def db-store "site.db")
 
