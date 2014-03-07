@@ -4,8 +4,7 @@
             [precure-dcd.util :as util]))
 
 (defn home-page []
-  (layout/render
-    "home.html" {:content (util/md->html "/md/docs.md")}))
+  (layout/render "home.html"))
 
 (defn about-page []
   (layout/render "about.html"))
