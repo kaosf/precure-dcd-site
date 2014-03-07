@@ -12,3 +12,13 @@ pom.xml
 resources/public/site.db.h2.db
 resources/public/site.db.lock.db
 .nrepl-port
+
+# Created by http://www.gitignore.io
+
+### vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
