@@ -1,14 +1,14 @@
 (ns precure-dcd.models.schema
   (:require [clojure.java.jdbc :as sql]
             [noir.io :as io]
-            [korma.db :refer [defdb postgres]]))
+            [korma.db :refer [postgres]]))
 
 (def db-store "site.db")
 
-(defdb db-spec (postgres {:db "precure_dcd"
-                          :user "precure_dcd"
-                          :password "precure_dcd"
-                          :port 5432}))
+(def db-spec (postgres {:db "precure_dcd"
+                        :user "precure_dcd"
+                        :password "precure_dcd"
+                        :port 5432}))
 (defn initialized?
   "checks to see if the database schema is present"
   []
