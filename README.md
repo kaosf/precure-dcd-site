@@ -26,4 +26,6 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2014 FIXME
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright 2014 ka
